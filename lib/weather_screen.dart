@@ -48,7 +48,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
       appBar: AppBar(
         title: const Text(
           'Weather App',
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
         ),
         centerTitle: true,
         actions: [
@@ -94,6 +94,15 @@ class _WeatherScreenState extends State<WeatherScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 //main card
+
+                const Center(
+                    child: Text(
+                  'Bengaluru',
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                )),
+                const SizedBox(
+                  height: 10,
+                ),
                 SizedBox(
                   width: double.infinity,
                   child: Card(
